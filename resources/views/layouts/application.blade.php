@@ -41,6 +41,7 @@
 
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="userDropdown">
                                     <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
+                                      <li><a class="dropdown-item" href="{{ route('parties.show', Auth::user()->party->code) }}">Home</a></li>
                                 </ul>
                             </li>
                         @else
